@@ -1,0 +1,13 @@
+<h2>{{titulo}}</h2>
+<form action="{% url 'volumenc:fcilindro_respuesta' %}" method="post">
+    
+    {% csrf_token %}
+
+    Introduzca el diámetro en metros:
+    <input type="number" name="num_1"><br>
+    Introduzca la altura en metros:
+    <input type="number" name="num_2"><br>
+    
+    //Boton para calcular
+    <input type="submit" name="submit" value="Calcular">
+</form>
