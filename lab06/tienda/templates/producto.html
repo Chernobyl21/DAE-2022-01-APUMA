@@ -4,9 +4,13 @@
 <br/>
 <h1>Descripcion:</h1>
 <h4>Nombre del Producto: {{ producto.nombre }}</h4>
+<img class="card-img-top img-fluid" src="
+      {% if producto.imagen != null %} {{ producto.imagen.url }} {% endif %}" alt=""> 
 <h4>Categoria: {{ producto.categoria }}</h4>
 <h4>Precio: {{ producto.precio }}</h4>
+<p class="card-text">{{ producto.categoria.nombre }}</p>
 <h4>Cantidad: {{ producto.stock }}</h4>
+4.0 stars
 <br>
 
 {% endblock %}
